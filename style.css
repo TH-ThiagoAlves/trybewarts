@@ -23,3 +23,8 @@ main {
     display: flex;
     align-items: center;
 }
+
+#trybewarts-forms-logo {
+    height: 500px;
+}
+
