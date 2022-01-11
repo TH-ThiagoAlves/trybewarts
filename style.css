@@ -10,9 +10,11 @@
     height: 100px;
     justify-content: space-between;
 }
+
 main {
     display: flex;
 }
+
 #evaluation-form {
     display: flex;
     flex-direction: column;
@@ -49,7 +51,7 @@ div#rates {
     justify-content: space-between;
 }
 
-#evaluation-form div {
+div#rate {
     display: flex;
     align-items: center;
 }
