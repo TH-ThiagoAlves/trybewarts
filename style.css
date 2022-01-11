@@ -35,4 +35,9 @@ main {
     flex-wrap: wrap;
     flex-direction: column;
 }
+.column-container {
+    display: flex;
+    flex-direction: column;
+    flex: 40%;
+}
 
