@@ -40,7 +40,6 @@ main {
     flex-direction: column;
     flex: 40%;
 }
-
 textarea {
     resize: none;
 }
@@ -59,3 +58,4 @@ div#rates {
     display: flex;
     justify-content: space-between;
 }
+
