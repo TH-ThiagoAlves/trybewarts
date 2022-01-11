@@ -13,5 +13,5 @@
 
 .trybewarts-login {
     display: flex;
-
+    align-items: center;
 }
