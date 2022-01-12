@@ -26,6 +26,7 @@
 
     <main>
         <form id="evaluation-form">
+            <h1>Formulário de Avaliação</h1>
           <div>
             <input type="text" 
                    name="input-name"
@@ -39,12 +40,14 @@
                    name="input-email" 
                    placeholder="Email" id="input-email">
 
-            <select name="" id="house">
-                <option value="Gitnória" id="gitnoria-house">Gitnória</option>
-                <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
-                <option value="Corvinode" id="corvinode-house">Corvinode</option>
-                <option value="Pytherina" id="pytherina-house">Pytherina</option>
-            </select>
+            <label for="house">Casa:
+                <select name="" id="house">
+                    <option value="Gitnória" id="gitnoria-house">Gitnória</option>
+                    <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
+                    <option value="Corvinode" id="corvinode-house">Corvinode</option>
+                    <option value="Pytherina" id="pytherina-house">Pytherina</option>
+                </select>
+        </label>
           </div>
 
           <hr>
@@ -102,18 +105,25 @@
             <label for="rate" id="label-rate">Como você avalia a Trybewarts?</label> 
             <div id="rate">
                 <label for="rate">
-                    <input type="radio" value="1" name="rate">
-                    1
-                </label>
-                <label for="rate"><input type="radio" value="2" name="rate">2</label>
-                <label for="rate"><input type="radio" value="3" name="rate">3</label>
-                <label for="rate"><input type="radio" value="4" name="rate">4</label>
-                <label for="rate"><input type="radio" value="5" name="rate">5</label>
-                <label for="rate"><input type="radio" value="6" name="rate">6</label>
-                <label for="rate"><input type="radio" value="7" name="rate">7</label>
-                <label for="rate"><input type="radio" value="8" name="rate">8</label>
-                <label for="rate"><input type="radio" value="9" name="rate">9</label>
-                <label for="rate"><input type="radio" value="10" name="rate">10</label>
+                    <input type="radio" value="1" name="rate">1</label>
+                <label for="rate">
+                    <input type="radio" value="2" name="rate">2</label>
+                <label for="rate">
+                    <input type="radio" value="3" name="rate">3</label>
+                <label for="rate">
+                    <input type="radio" value="4" name="rate">4</label>
+                <label for="rate">
+                    <input type="radio" value="5" name="rate">5</label>
+                <label for="rate">
+                    <input type="radio" value="6" name="rate">6</label>
+                <label for="rate">
+                    <input type="radio" value="7" name="rate">7</label>
+                <label for="rate">
+                    <input type="radio" value="8" name="rate">8</label>
+                <label for="rate">
+                    <input type="radio" value="9" name="rate">9</label>
+                <label for="rate">
+                    <input type="radio" value="10" name="rate">10</label>
             </div>
           </div>
           <label for="textarea" class="textarea">Deixe seu comentário:</label>
@@ -126,7 +136,7 @@
               <input type="checkbox" id="agreement">
           </label>
 
-          <button type="submit" id="submit-btn">Enviar</button>
+          <button type="submit" id="submit-btn" disabled >Enviar</button>
         </form>
         <img src="images/trybewarts-colored.svg" alt="logo trybewarts" id="trybewarts-forms-logo">
     </main>
