@@ -7,13 +7,13 @@ const counter = document.querySelector('#counter');
 const agreement = document.getElementById('agreement');
 const botaoEnviar = document.getElementById('submit-btn');
 
-function validacao() {
+botao.addEventListener('click', () => {
   if (email.value === 'tryber@teste.com' && senha.value === '123456') {
     alert('Olá, Tryber!');
   } else {
     alert('Email ou senha inválidos.');
   }
-}
+});
 
 // Função que habilita o botão 'enviar' se o usuário concordar com o uso dos dados
 agreement.addEventListener('click', () => {
@@ -26,16 +26,11 @@ agreement.addEventListener('click', () => {
   }
 });
 
-function counterCaracter(comment) {
-  const decrementar = comment.target.value.length;
-  if (parseInt(counter.innerText) <= 0) {
-    return counter.innerText = 0;
-  }
-  counter.innerText = parseInt(counter.innerText) - 1;
-}
+// Função que atualiza o contador de caracteres disponíveis
 
-textarea.addEventListener('keyup', counterCaracter);
-botao.addEventListener('click', validacao);
+textarea.addEventListener('input', () => {
+  counter.innerText = 500 - textarea.value.length;
+});
 
 // Funcionalidade que limpa o formulário e preenche com os dados
 //  inseridos pelo usuário
@@ -59,7 +54,7 @@ const selectedContent = () => {
   const content = document.getElementsByClassName('subject');
   const selected = [];
   for (let i = 0; i < content.length; i += 1) {
-    if (content[i].checked && content[i] !== content[content.length - 1]) {
+    if (content[i].checked && content[i]) {
       selected.push(`${content[i].value}`);
     }
   } return `${selected.join(', ')}.`;
