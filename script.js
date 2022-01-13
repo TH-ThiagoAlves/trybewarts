@@ -6,15 +6,6 @@ let counter = document.querySelector('#counter');
 let agreement = document.getElementById('agreement');
 let botaoEnviar = document.getElementById('submit-btn');
 
-
-function validacao () {
-    if (email.value == 'tryber@teste.com' && senha.value == 123456) {
-        return alert('Olá, Tryber!');
-    }else {
-        alert('Email ou senha inválidos.')
-    }
-}
-
 // Função que habilita o botão 'enviar' se o usuário concordar com o uso dos dados
 agreement.addEventListener('click', function submitControl(){
     if (agreement.checked === true) {
@@ -26,6 +17,6 @@ agreement.addEventListener('click', function submitControl(){
     }
 })
 
-textarea.addEventListener('input', () => {counter.innerText = 500 - textarea.value.length;});
+textarea.addEventListener('input', () => {counter.innerText = (500 - textarea.value.length);});
 
-botao.addEventListener('click', validacao);
+botao.addEventListener('click', () => {email.value == 'tryber@teste.com' && senha.value == 123456 ? alert('Olá, Tryber!') : alert('Email ou senha inválidos.'); });
