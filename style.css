@@ -27,7 +27,7 @@ main {
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
-    width: 600px;
+    width: 675px;
 }
 
 .trybewarts-login {
@@ -53,6 +53,7 @@ main {
 textarea {
     resize: none;
     border: 1px solid #4e2c83;
+    padding: 6px;
 }
 
 div#rates {

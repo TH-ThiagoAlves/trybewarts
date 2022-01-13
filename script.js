@@ -3,7 +3,6 @@ const senha = document.querySelector('#senha');
 const botao = document.querySelector('#entrar');
 const textarea = document.querySelector('#textarea');
 let counter = document.querySelector('#counter');
-let decrementar = 0;
 let agreement = document.getElementById('agreement');
 let botaoEnviar = document.getElementById('submit-btn');
 
@@ -27,13 +26,6 @@ agreement.addEventListener('click', function submitControl(){
     }
 })
 
-function counterCaracter (comment) {
-    if (parseInt(counter.innerText) <= 0) {
-        return counter.innerText = 0
-    }
-    decrementar = comment.target.value.length;
-    counter.innerText = parseInt(counter.innerText) - 1;
-}
+textarea.addEventListener('input', () => {counter.innerText = 500 - textarea.value.length;});
 
-textarea.addEventListener('keyup', counterCaracter);
 botao.addEventListener('click', validacao);
