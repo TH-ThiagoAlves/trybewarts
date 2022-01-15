@@ -200,6 +200,16 @@ footer {
 
 #hr2 { border-top: 2px solid rgb(217, 217, 217); }
 
+.item-lista {
+  font-size: larger;
+  outline-style: double;
+  background-color: white;
+  border-radius: 3px;
+  padding-left: 10px;
+}
+
+::marker { color: rgb(50, 167, 145); }
+
 :hover#entrar , :hover#submit-btn { background-color: rgb(87, 50, 146); }
 
 ::selection {
@@ -207,7 +217,7 @@ footer {
   background-color: rgb(87, 50, 146);
 }
 
-@media screen and( max-width : 1187px ) {
+@media screen and ( max-width : 1187px ) {
 
   main {
     flex-flow: column-reverse;
@@ -228,7 +238,7 @@ footer {
 
 }
 
-@media screen and( max-width : 640px ) {
+@media screen and ( max-width : 640px ) {
 
   #email , #senha , #entrar {
     margin-right: 5px;
@@ -266,7 +276,7 @@ footer {
 
 }
 
-@media screen and( max-width : 370px ) {
+@media screen and ( max-width : 370px ) {
 
   #trybewarts-header-title {
     display: none;
