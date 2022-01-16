@@ -75,9 +75,7 @@ footer {
   justify-content: space-between;
 }
 
-#trybewarts-forms-logo {
-  height: 500px;
-}
+#trybewarts-forms-logo { height: 500px; }
 
 #entrar , #submit-btn {
   padding: 0 50px;
