@@ -95,9 +95,8 @@ footer {
   border-radius: 5px;
 }
 
-#identification-data {
+#name-lastname , #email-house {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -116,7 +115,7 @@ footer {
   margin-right: 3px;
 }
 
-#identification-data label { margin: auto 3px; }
+#email-house label { margin: auto 3px; }
 
 #input-name , #input-lastname , #input-email {
   border: none;
@@ -151,9 +150,7 @@ footer {
   justify-content: space-between;
 }
 
-#label-rate {
-  margin-right: 12px;
-}
+#label-rate { margin-right: 12px; }
 
 #family-content-container {
   display: flex;
@@ -235,9 +232,13 @@ footer {
     flex-direction: column;
   }
 
+  #email-house label { display: flex; }
+
+  #house { flex-grow: 1; }
+
 }
 
-@media screen and ( max-width : 640px ) {
+@media screen and ( max-width : 690px ) {
 
   #email , #senha , #entrar {
     margin-right: 5px;
@@ -269,7 +270,7 @@ footer {
     height: 300px;
   }
 
-  #identification-data , #family-content-container , #rates {
+  #email-house , #name-lastname , #family-content-container , #rates {
     flex-direction: column;
   }
 
@@ -277,12 +278,12 @@ footer {
 
 @media screen and ( max-width : 370px ) {
 
-  #trybewarts-header-title {
-    display: none;
-  }
+  body { font-size: 10px; }
 
-  .rate {
-    display: inline-flex;
-  }
+  #trybewarts-header-title { display: none; }
+
+  #checked-box { width: auto; }
+
+  #email-house label { font-size: 15px;}
 
 }
