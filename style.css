@@ -215,17 +215,11 @@ footer {
 
 @media screen and ( max-width : 1187px ) {
 
-  main {
-    flex-flow: column-reverse;
-  }
+  main { flex-flow: column-reverse; }
 
-  #email , #senha , #entrar {
-    margin: 2px 15px 2px 0;
-  }
+  #email , #senha , #entrar { margin: 2px 15px 2px 0; }
 
-  #email , #senha {
-    padding: 5px 0 5px 8px;
-  }
+  #email , #senha { padding: 5px 0 5px 8px; }
 
   .trybewarts-login {
     align-items: stretch;
@@ -240,21 +234,13 @@ footer {
 
 @media screen and ( max-width : 690px ) {
 
-  #email , #senha , #entrar {
-    margin-right: 5px;
-  }
+  #email , #senha , #entrar { margin-right: 5px; }
 
-  .trybewarts-login {
-    width: 110px;
-  }
+  .trybewarts-login { width: 110px; }
 
-  #entrar , #submit-btn {
-    padding: 0;
-  }
+  #entrar , #submit-btn { padding: 0; }
 
-  h1 {
-    font-size: 20px;
-  }
+  h1 { font-size: 20px; }
 
   #evaluation-form {
     display: flex;
@@ -262,13 +248,9 @@ footer {
     width: 118%;
   }
 
-  #input-lastname , #input-name , #input-email {
-    margin: 5px 0;
-  }
+  #input-lastname , #input-name , #input-email { margin: 5px 0; }
 
-  #trybewarts-forms-logo {
-    height: 300px;
-  }
+  #trybewarts-forms-logo { height: 300px; }
 
   #email-house , #name-lastname , #family-content-container , #rates {
     flex-direction: column;
